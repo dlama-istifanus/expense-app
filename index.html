@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Expense Tracker</h2>
+        <div id="bal">
+            <h3>YOUR BALANCE</h3>
+            <h1>#0</h1>
+        </div>
+        <div id="inputs">
+            <div id="income">
+                <h3>INCOME</h3>
+                <h4>#0.00</h4>
+            </div>
+            <div id="expense">
+                <h3>EXPENSE</h3>
+                <h4>#0.00</h4>
+            </div>
+        </div>
+        <div id="history">
+            <h3>History</h3>
+            <div id="records">
+                <div class="record green">
+                    <p>none</p>
+                    <p id="score">0</p>
+                </div>
+                <div class="record red">
+                    <p>none</p>
+                    <p id="score">0</p>
+                </div>
+            </div>
+            <button id="clear">clear all</button>
+        </div>
+        <div id="transaction">
+            <h3>Add new transaction</h3>
+            <h4>Text</h4>
+            <input type="text" placeholder="Enter text..." id="txt-input"/>
+            <h4>Amount <br> (negative - expense, positive - income)</h4>
+            <select>
+                <option value="green">Income</option>
+                <option value="red">Expense</option>
+            </select>
+            <input type="number" placeholder="Enter Amount..." id="amount"/>
+            <button id="add">Add transaction</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
